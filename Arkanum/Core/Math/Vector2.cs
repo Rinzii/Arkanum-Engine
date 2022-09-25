@@ -1,7 +1,6 @@
-﻿using System;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 
-namespace Arkanum.Engine.Core.Math;
+namespace Arkanum.Core.Math;
 
 public struct Vector2 : IEquatable<Vector2>, IFormattable
 {

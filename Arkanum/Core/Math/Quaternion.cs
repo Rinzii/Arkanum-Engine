@@ -1,8 +1,7 @@
-﻿using System;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace Arkanum.Engine.Core.Math;
+namespace Arkanum.Core.Math;
 
 [StructLayout(LayoutKind.Sequential)]
 public struct Quaternion : IEquatable<Quaternion>, IFormattable

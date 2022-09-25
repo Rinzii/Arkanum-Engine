@@ -1,4 +1,4 @@
-﻿namespace Arkanum.Engine.Engine.Input;
+﻿namespace Arkanum.Engine.Input;
 
 public enum Keys
 {

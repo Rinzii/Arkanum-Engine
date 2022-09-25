@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <RootNamespace>Arkanum</RootNamespace>
+        <AssemblyName>Arkanum</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Silk.NET" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Assimp" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Core" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.GLFW" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Input" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Input.Common" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Input.Glfw" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Input.Sdl" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Maths" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.OpenAL" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.OpenAL.Extensions.Soft" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.OpenGL" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.SDL" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Vulkan" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Windowing" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Windowing.Common" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Windowing.Glfw" Version="2.16.0" />
+      <PackageReference Include="Silk.NET.Windowing.Sdl" Version="2.16.0" />
+    </ItemGroup>
+
+</Project>

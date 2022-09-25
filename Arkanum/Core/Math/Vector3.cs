@@ -1,8 +1,7 @@
-﻿using System;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace Arkanum.Engine.Core.Math;
+namespace Arkanum.Core.Math;
 
 [StructLayout(LayoutKind.Sequential, Pack = 4)]
 public struct Vector3 : IEquatable<Vector3>, IFormattable
@@ -722,7 +721,7 @@ public struct Vector3 : IEquatable<Vector3>, IFormattable
         float diffY = l.Y - r.Y;
         float diffZ = l.Z - r.Z;
         float sqrtMag = diffX * diffX + diffY * diffY + diffZ * diffZ;
-        return sqrtMag < Epsilon * Epsilon;
+        return sqrtMag < Epsilon * Epsilon; // TODO: Pay attention to this, could have problems.
     }
 
     /// <summary>

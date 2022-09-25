@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Arkanum.Engine.Core.Math;
+namespace Arkanum.Core.Math;
 
 public static class Time
 {

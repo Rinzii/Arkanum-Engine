@@ -1,25 +1,26 @@
-﻿using System;
+﻿
 
-namespace Arkanum.Engine;
+namespace Arkanum;
 
 public class ArkanumGame : IDisposable
 {
+
     public ArkanumGame()
     {
         
     }
 
-    protected void Initialize()
+    public void Initialize()
     {
         
     }
 
-    protected void Update()
+    public void Update()
     {
         
     }
 
-    protected void Draw()
+    public void Draw()
     {
 
     }

@@ -2,12 +2,11 @@
 #pragma warning disable SA1117 // Parameters must be on same line or separate lines
 #pragma warning disable SA1313 // Parameter names must begin with lower-case letter
 
-using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using MatrixDotnet = System.Numerics.Matrix4x4;
 
-namespace Arkanum.Engine.Core.Math;
+namespace Arkanum.Core.Math;
 
 [StructLayout(LayoutKind.Sequential, Pack = 4)]
 public struct Matrix4 : IEquatable<Matrix4>, IFormattable
