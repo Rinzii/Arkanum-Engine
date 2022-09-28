@@ -200,7 +200,19 @@ public struct MathF
     // Linearly interpolates unclamped between a and b by t.
     public static float LerpUnclamped(float a, float b, float t)
     {
-        return a + (b - a) * t;
+        // Exact, monotonic, bounded, determinate, and (for a=b=0) consistent
+        if (a <= 0 && b >= 0 || a >= 0 && b <= 0)
+            return t * b + (1 - t) * a
+            
+        if(t==1) 
+            return b; // exact
+  
+        // Exact at t=0, monotonic except near t=1,
+        // bounded, determinate, and consistent:
+        const Float x = a + t*(b-a);
+        return t > 1 == b > a ? Max(b, x) : Min(b, x);
+        
+        return a * (1.0f - t) + (b * f);
     }
     
     // Linearly interpolates between a and b by t but makes sure the values interpolate correctly when they wrap around 360 degrees.
