@@ -201,15 +201,15 @@ public struct MathF
     public static float LerpUnclamped(float a, float b, float t)
     {
         // Exact, monotonic, bounded, determinate, and (for a=b=0) consistent
-        if (a <= 0 && b >= 0 || a >= 0 && b <= 0)
-            return t * b + (1 - t) * a
+        if (a <= 0.0f && b >= 0.0f || a >= 0.0f && b <= 0.0f)
+            return t * b + (1.0f - t) * a
             
         if(t==1) 
             return b; // exact
   
         // Exact at t=0, monotonic except near t=1,
         // bounded, determinate, and consistent:
-        const Float x = a + t*(b-a);
+        const float x = a + t * (b - a);
         return t > 1 == b > a ? Max(b, x) : Min(b, x);
         
         return a * (1.0f - t) + (b * f);
